@@ -90,7 +90,6 @@ module HieDb.Compat (
     , mkFastStringByteString
 ) where
 
-import Compat.HieTypes
 
 import GHC.Data.FastString as FS
 import GHC.Driver.Session
@@ -122,7 +121,8 @@ import qualified Algebra.Graph.AdjacencyMap           as Graph
 import qualified Algebra.Graph.AdjacencyMap.Algorithm as Graph
 
 import GHC.Types.SrcLoc
-import Compat.HieUtils
+import GHC.Iface.Ext.Types
+import GHC.Iface.Ext.Utils
 
 import qualified Data.Map as M
 import qualified Data.Set as S

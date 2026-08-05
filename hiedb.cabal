@@ -69,7 +69,6 @@ library
                      , directory
                      , mtl
                      , sqlite-simple
-                     , hie-compat ^>= 0.3
                      , text
                      , bytestring
                      , algebraic-graphs >= 0.3

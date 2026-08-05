@@ -5,7 +5,6 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE ViewPatterns #-}
 {-# LANGUAGE CPP #-}
 module HieDb.Utils where
 
@@ -13,10 +12,11 @@ import qualified Data.Tree
 
 import Prelude hiding (mod)
 
-import Compat.HieBin
-import Compat.HieTypes
-import qualified Compat.HieTypes as HieTypes
-import Compat.HieUtils
+import GHC.Iface.Ext.Types
+import GHC.Iface.Ext.Binary
+import GHC.Iface.Ext.Utils
+import qualified GHC.Iface.Ext.Types as HieTypes
+
 import qualified Data.Map as M
 import qualified Data.Set as S
 
