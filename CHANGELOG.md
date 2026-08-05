@@ -1,5 +1,10 @@
 # Revision history for hiedb
 
+## unreleased
+
+* import hie-specific types directly from the `ghc` library, not from `hie-compat`
+* drop `hie-compat` as a dependency
+
 ## 0.8.0.0
 
 * Bump base and ghc version bounds to support GHC 9.14

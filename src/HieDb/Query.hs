@@ -11,7 +11,7 @@ import           Algebra.Graph.Export.Dot hiding ((:=))
 import qualified Algebra.Graph.Export.Dot as G
 
 import           GHC
-import           Compat.HieTypes
+import GHC.Iface.Ext.Types
 
 import           System.Directory
 import           System.FilePath

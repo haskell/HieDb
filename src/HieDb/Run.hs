@@ -11,8 +11,8 @@ module HieDb.Run where
 import Prelude hiding (mod)
 
 import GHC
-import Compat.HieTypes
-import Compat.HieUtils
+import GHC.Iface.Ext.Types
+import GHC.Iface.Ext.Utils
 
 import qualified Data.Map as M
 

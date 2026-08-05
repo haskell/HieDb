@@ -10,10 +10,9 @@ module HieDb.Create where
 
 import Prelude hiding (mod)
 
-import Compat.HieTypes
-import Compat.HieUtils
-
 import GHC
+import GHC.Iface.Ext.Types
+import GHC.Iface.Ext.Utils
 
 import Control.Exception
 import Control.Monad
