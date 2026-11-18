@@ -185,6 +185,8 @@ setupHieDb conn = do
                 \)"
   execute_ conn "CREATE INDEX IF NOT EXISTS refs_mod ON refs(hieFile)"
 
+  execute_ conn "CREATE INDEX IF NOT EXISTS refs_occ ON refs(occ, mod)"
+
   execute_ conn "CREATE TABLE IF NOT EXISTS decls \
                 \( hieFile    TEXT NOT NULL \
                 \, occ        TEXT NOT NULL \
